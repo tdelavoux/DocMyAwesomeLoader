@@ -1,0 +1,420 @@
+<!-- 
+
+    @autohor    : Thibault DELAVOUX
+    @site       : http://thibaultdelavoux.fr
+    @Year       : 2020
+    @Version    : 1.0 
+
+    Copyright © 2020 DELAVOUX Thibault
+    Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+    The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+    The Software is provided “as is”, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the Software.
+-->
+
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="keywords" content="">
+
+    <title>MSP Doc Theme</title>
+
+    <link rel="stylesheet" type="text/css" href="fonts/fontawesome-5.13.0/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shCore.css" media="all">
+    <link rel="stylesheet" type="text/css" href="js/syntax-highlighter/styles/shThemeRDark.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/lib/myAwesomeLoader/css/myAwesomeLoader.css" media="all">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Lobster&display=swap" rel="stylesheet">
+
+    <!-- Select Color Sheme by just comment/decomment whished styles -->
+    <link rel="stylesheet" type="text/css" href="css/nature.css">
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <!--------------------------- title page  --------------------------------------------------------->
+        <div class="container-fluid docs-over-heading">
+            <section id="top" class="docs-heading">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="big-title text-center">
+                            <h1 class="lead">MyAseomeLoader Doc</h1>
+                            <p class="lead"><a class="btn btn-info"><i class="fas fa-download"></i>Download MyAwesomeLoader / version 1.0</a></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!--------------------------- /title page  --------------------------------------------------------->
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <!------------------------ SIDEBAR --------------------------------------------------------->
+                <div class="col-md-3 docs-over-sidebar">
+                    <nav class="docs-sidebar">
+                        <ul class="nav">
+                            <li><a href="#product-infos">Global Informations</a></li>
+                            <li><a href="#Installation">Install</a></li>
+                            <li><a href="#Utilisation">Usage</a></li>
+                            <li><a href="#Exemples">Exemples</a></li>
+                            <li><a href="#versioning">Versions</a></li>
+                            <li><a href="#copyright">Copyright et License</a></li>
+                        </ul>
+                    </nav >
+                </div>
+                <!------------------------ /SIDEBAR -------------------------------------------------------->
+
+                <!------------------------ CONTENT -------------------------------------------------------->
+                <div class="col-md-9 doc-over-content">
+
+
+                    <section id="product-infos" class="first-section">
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="title-theme">Global Informations</h2>
+                                <div class="row">
+                                    <div class="col-md-12 full">
+                                        <h4>Basic infos</h4>
+                                        <div class="intro-bloc">
+                                            <ul>
+                                                <li><strong>Product : </strong>MyAwesomeLoader</li>
+                                                <li><strong>Curent Version : </strong> v 1.0</li>
+                                                <li><strong>Author  : </strong> <a href="http://www.thibaultdelavoux.fr/" target="_blank">DELAVOUX Thibault</a></li>
+                                                <li><strong>License : </strong> <a href="#line11">MIT License</a></li>
+                                            </ul>
+                                        </div>
+                                        <hr>
+                                        <h4>About this product</h4>
+                                        <div>
+                                            <p> MyAwesomeLoader is a small - and easy to use - librairie to display personal loaders on your web page.<br />
+                                                It has been developed in JavaScript and allow you to create your own Loader based on image or gif. <br />
+                                                MyAwesomeLoader is hightly configurable and allow you to choose background color, text color, animations and message you want to display. 
+                                                For any questions or sugestions about this product, contact me to <a href="mailto:thibault.delavoux@gmail.com">this email adress</a>.
+                                            </p>
+
+                                            <hr>
+
+                                            <h4>Requirements</h4>
+                                            <p>MyAwesomeLoader needs following librairies to work perfectly.</p>
+                                            <ol>
+                                                <li>Bootstrap (min. V.3.x)</li>
+                                                <li>JQuery (min 1.11)</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
+
+                    <section id="Installation" class="first-section">
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="title-theme">Install</h2>
+                                   <p>To use this librairie, download the zip archive of version you want and include both JS and CSS file it to you project.</p>
+
+                                   <pre class="brush: html">
+                                        <!-- Exemple if you include root folder to your projet at path 'pathToLib' -->
+                                        <link rel="stylesheet" type="text/css" href="/lib/myAwesomeLoader/css/myAwesomeLoader.css" media="all">
+                                        <script src="/lib/myAwesomeLoader/js/myAwesomeLoader.js"></script>
+                                    </pre>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="Utilisation" class="section">
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="title-theme">Usage</h2>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>
+                                    To define a new loader, you may create new MyAwesomeLoader Oject. Without params, the default launcher is used. To define personalized options, defined them.
+                                    You might define them all or just afew, leting the others default params.
+                                </p>
+
+                                <pre class="brush: js">
+                                    /* Définition du loader et de ses options */
+                                    var loader = new myAwesomeLoader({
+                                        message : 'Loading in progress ...',
+                                        imgPath : './img/default.gif',
+                                        backgroundColor : '#fff',
+                                        textColor: '#000'
+                                    });
+                                </pre>
+
+
+                                <h4> Options</h4>
+                                <p>All the following options might be persolalized to create your own loader.</p>
+
+                                <div class="row option_line">
+                                    <strong class="col-md-3 col-xs-12">message</strong>
+                                    <span class="col-md-3 col-xs-12">Define the loader text</span>
+                                    <span class="col-md-3 col-xs-12">String</span>
+                                    <span class="col-md-3 col-xs-12">Loading ...</span>
+                                </div>
+                                 
+                                <div class="row option_line">
+                                    <strong class="col-md-3 col-xs-12">imgPath</strong>
+                                    <span class="col-md-3 col-xs-12">Define the image/gif path to use</span>
+                                    <span class="col-md-3 col-xs-12">String</span>
+                                    <span class="col-md-3 col-xs-12">'./img/default.gif'</span>
+                                </div>  
+
+                                <div class="row option_line">
+                                    <strong class="col-md-3 col-xs-12">backgroundColor</strong>
+                                    <span class="col-md-3 col-xs-12">Define the background color</span>
+                                    <span class="col-md-3 col-xs-12">String</span>
+                                    <span class="col-md-3 col-xs-12">#fff</span>
+                                </div> 
+
+                                <div class="row option_line">
+                                    <strong class="col-md-3 col-xs-12">textColor</strong>
+                                    <span class="col-md-3 col-xs-12">Define the message color</span>
+                                    <span class="col-md-3 col-xs-12">String</span>
+                                    <span class="col-md-3 col-xs-12">#000</span>
+                                </div>      
+    
+                                <div class="WarningBloc banner-bloc">
+                                    <div class="banner-bloc-image">
+                                        <i class="fa fa-exclamation-triangle"></i> 
+                                    </div>
+                                    <div>
+                                        Care with the img path. Be sure to get the right location.<br /> Height and width are very importent to center image on the screen 
+                                    </div>
+                                </div>
+
+                                <hr>
+
+                                <h4> Functions</h4>
+                                <p>To launch / stop and debug, the following options, use the loader options</p>
+
+                                <pre class="brush: js">
+                                    var loader = new myAwesomeLoader();
+                                    loader.load();
+                                    loader.stop();
+                                    /*--- [ ... ] --- */
+
+                                </pre>
+                                <h5>Actions</h5>
+                                <div class="row option_line">
+                                    <strong class="col-md-6 col-xs-12">.load()</strong>
+                                    <span class="col-md-6 col-xs-12">Active the loader</span>
+                                </div>
+                                 
+                                <div class="row option_line">
+                                    <strong class="col-md-6 col-xs-12">.stopLoader()</strong>
+                                    <span class="col-md-6 col-xs-12">Manually stop the loader</span>
+                                </div>  
+
+                                <h5>Getters / Setters</h5>
+                                <div class="row option_line">
+                                    <strong class="col-md-6 col-xs-12">getMessage</strong>
+                                    <span class="col-md-6 col-xs-12">Get current message</span>
+                                </div> 
+                                <div class="row option_line">
+                                    <strong class="col-md-6 col-xs-12">getImgPath</strong>
+                                    <span class="col-md-6 col-xs-12">Get current image path</span>
+                                </div>
+                                <div class="row option_line">
+                                    <strong class="col-md-6 col-xs-12">getBackgroundColor</strong>
+                                    <span class="col-md-6 col-xs-12">Get current background color</span>
+                                </div>
+                                <div class="row option_line">
+                                    <strong class="col-md-6 col-xs-12">getTextColor</strong>
+                                    <span class="col-md-6 col-xs-12">Get current text color</span>
+                                </div>
+
+                                <div class="row option_line">
+                                    <strong class="col-md-6 col-xs-12">setMessage(message) </strong>
+                                    <span class="col-md-6 col-xs-12">Set new message</span>
+                                </div> 
+                                <div class="row option_line">
+                                    <strong class="col-md-6 col-xs-12">setImg(img)</strong>
+                                    <span class="col-md-6 col-xs-12">Set new image path</span>
+                                </div>
+                                <div class="row option_line">
+                                    <strong class="col-md-6 col-xs-12">setBackground</strong>
+                                    <span class="col-md-6 col-xs-12">Set new background color</span>
+                                </div>
+                                <div class="row option_line">
+                                    <strong class="col-md-6 col-xs-12">setTextColor</strong>
+                                    <span class="col-md-6 col-xs-12">Set new text color</span>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    
+
+                    <section id="Exemples" class="section">
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="title-theme">Exemples</h2>
+                            </div>
+                        </div>
+                        
+
+                        <h4>Avaiable Color Sheme</h4>
+
+                                    <div class="row">
+                                        <div class="col-md-9">
+                                            <pre class="brush: js">
+                                                var loader = new myAwesomeLoader({
+                                                    imgPath : './img/default.gif'
+                                                });
+                                            </pre>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h5>Default</h5>
+                                            <button class="btn btn-success">Launch</button>
+                                        </div>
+                                    </div>
+                                   
+                                    <div class="row mt1">
+                                        <div class="col-md-9">
+                                           <pre class="brush: js">
+                                                var loader = new myAwesomeLoader({
+                                                    imgPath : './img/default.gif'
+                                                });
+                                            </pre>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h5>Unicorn</h5>
+                                            <button class="btn btn-success">Launch</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt1">
+                                        <div class="col-md-9">
+                                            <pre class="brush: js">
+                                                var loader = new myAwesomeLoader({
+                                                    imgPath : './img/default.gif'
+                                                });
+                                            </pre>
+                                        </div>
+                                        <div class="col-md-3">
+                                            <h5>Cool</h5>
+                                            <button class="btn btn-success">Launch</button>
+                                        </div>
+                                    </div>
+                        
+                    </section>
+
+
+                    <section id="versioning" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="title-theme">Versions</h2>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <p>Keep your audience informed of new released and version history. Consign all informations and links to get previsous versions
+                                </p>
+
+                                <hr>
+
+                                <h4>Changelog</h4>
+
+                                <pre class="brush: html">
+
+                                        -----------------------------------------------------------------------------------------
+                                        Version 1.0 - April 22th, 2020
+                                        -----------------------------------------------------------------------------------------
+
+                                        - Initial version : Handle image, message, background and text color
+
+                                </pre>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h4>Changelog</h4>
+                               <p>No older versions yet</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section id="copyright" class="section">
+
+                        <div class="row">
+                            <div class="col-md-12 left-align">
+                                <h2 class="title-theme">Copyright et license</h2>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12">
+                                
+                                <span>Code released under the <a href="https://en.wikipedia.org/wiki/MIT_License" target="_blank">MIT License</a> below.</span>                        
+                                <p>Copyright © 2020 DELAVOUX Thibault<br />
+                                Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the “Software”), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:<br /><br />
+
+                                The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.<br /><br />
+
+                                The Software is provided “as is”, without warranty of any kind, express or implied, including but not limited to the warranties of merchantability, fitness for a particular purpose and noninfringement. In no event shall the authors or copyright holders be liable for any claim, damages or other liability, whether in an action of contract, tort or otherwise, arising from, out of or in connection with the software or the use or other dealings in the Software.
+                                </p>
+                            
+                            </div>
+                        </div>
+                    </section>
+
+
+                </div>
+                <!------------------------ /CONTENT -------------------------------------------------------->
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- CUSTOM PLUGINS -->
+    <script src="js/main.js"></script>
+
+    <script src="js/syntax-highlighter/scripts/shCore.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushXml.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushCss.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushJScript.js"></script>
+    <script src="js/syntax-highlighter/scripts/shBrushPhp.js"></script>
+
+</body>
+
+</html>
+
+<script>
+    
+    var loader = new myAwesomeLoader({
+        message : 'Loading in progress ...',
+        img : './img/default.gif',
+        backgroundColor : '#fff',
+        textColor: '#000'
+    });
+    //loader.load();
+</script>
