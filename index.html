@@ -221,7 +221,7 @@
                                 </div>
                                  
                                 <div class="row option_line">
-                                    <strong class="col-md-6 col-xs-12">.stopLoader()</strong>
+                                    <strong class="col-md-6 col-xs-12">.()</strong>
                                     <span class="col-md-6 col-xs-12">Manually stop the loader</span>
                                 </div>  
 
@@ -277,42 +277,51 @@
                                     <div class="row">
                                         <div class="col-md-9">
                                             <pre class="brush: js">
-                                                var loader = new myAwesomeLoader({
-                                                    imgPath : './img/default.gif'
+                                                loader = new myAwesomeLoader({
+                                                    message : 'Default Loader ...',
+                                                    imgPath : './img/default.gif',
+                                                    backgroundColor : '#fff',
+                                                    textColor: '#000'
                                                 });
                                             </pre>
                                         </div>
                                         <div class="col-md-3">
                                             <h5>Default</h5>
-                                            <button class="btn btn-success">Launch</button>
+                                            <button id="exempleDefault" class="btn btn-success">Launch</button>
                                         </div>
                                     </div>
                                    
                                     <div class="row mt1">
                                         <div class="col-md-9">
                                            <pre class="brush: js">
-                                                var loader = new myAwesomeLoader({
-                                                    imgPath : './img/default.gif'
+                                                loader = new myAwesomeLoader({
+                                                    message : 'Licorn Loader ...',
+                                                    imgPath : './img/unicorn.gif',
+                                                    backgroundColor : '#8ccdbf',
+                                                    textColor: '#fff'
                                                 });
                                             </pre>
                                         </div>
                                         <div class="col-md-3">
                                             <h5>Unicorn</h5>
-                                            <button class="btn btn-success">Launch</button>
+                                            <button id="exempleLicorn" class="btn btn-success">Launch</button>
                                         </div>
                                     </div>
 
                                     <div class="row mt1">
                                         <div class="col-md-9">
                                             <pre class="brush: js">
-                                                var loader = new myAwesomeLoader({
-                                                    imgPath : './img/default.gif'
+                                                loader = new myAwesomeLoader({
+                                                    message : 'Cool Loader ...',
+                                                    imgPath : './img/cool.gif',
+                                                    backgroundColor : '#24447c',
+                                                    textColor: '#fff'
                                                 });
                                             </pre>
                                         </div>
                                         <div class="col-md-3">
                                             <h5>Cool</h5>
-                                            <button class="btn btn-success">Launch</button>
+                                            <button id="exempleCool" class="btn btn-success">Launch</button>
                                         </div>
                                     </div>
                         
@@ -409,12 +418,43 @@
 </html>
 
 <script>
-    
-    var loader = new myAwesomeLoader({
-        message : 'Loading in progress ...',
-        img : './img/default.gif',
-        backgroundColor : '#fff',
-        textColor: '#000'
+
+    var loader = new myAwesomeLoader();
+
+    $('#exempleDefault').click(function(){
+        loader = new myAwesomeLoader({
+            message : 'Default Loader ...',
+            imgPath : './img/default.gif',
+            backgroundColor : '#fff',
+            textColor: '#000'
+        });
+        loading();
     });
-    //loader.load();
+
+    $('#exempleLicorn').click(function(){
+        loader = new myAwesomeLoader({
+            message : 'Licorn Loader ...',
+            imgPath : './img/unicorn.gif',
+            backgroundColor : '#8ccdbf',
+            textColor: '#fff'
+        });
+        loading();
+    });
+
+    $('#exempleCool').click(function(){
+        loader = new myAwesomeLoader({
+            message : 'Cool Loader ...',
+            imgPath : './img/cool.gif',
+            backgroundColor : '#24447c',
+            textColor: '#fff'
+        });
+        loading();
+    });
+
+    function loading(){
+        loader.load();
+        setTimeout(function(){loader.stopLoader();}, 4000);
+    }
+
+    
 </script>
